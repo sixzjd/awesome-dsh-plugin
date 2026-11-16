@@ -661,6 +661,7 @@ dsh plugin --profile web add dshmarket
 - [shyuan-hub/dsh-compact-button](https://github.com/shyuan-hub/dsh-compact-button) — 在上下文计量面板中添加「压缩上下文」与「新建会话」两个按钮：压缩按钮通过与手敲 /compact 相同的通道提交命令，新建会话按钮在同一 workspace 中开启新会话。
 - [siberiah2o/dsh-plugin-terminal](https://github.com/siberiah2o/dsh-plugin-terminal) — 底部多标签终端面板（node-pty + xterm.js）：贴底全宽，输入框始终在终端上方。
 - [SiriLee/dsh-approval-hotkeys](https://github.com/SiriLee/dsh-approval-hotkeys) — Web UI 面板快捷键：在审批、提问、计划审查等交互面板上，Enter 触发确认操作、Esc 触发取消操作。
+- [sixzjd/dsh-folder-attach](https://github.com/sixzjd/dsh-folder-attach) — 把文件夹拖进 DSH Web 输入框，不再受“只有桌面版支持文件夹”的限制：提供宿主文件夹选择对话框、/folder 命令，以及拖拽/粘贴成 @path 提及；浏览器与桌面端都能用。
 - [SkyblueeeLabs/dsh-iconic-launcher](https://github.com/SkyblueeeLabs/dsh-iconic-launcher) — 自定义 DeepSeek Harness 桌面快捷方式图标：选预设或上传图片，自动去除白底、生成多尺寸 ICO，一键写入桌面快捷方式。
 - [skyhancloud/dsh-client-ui-quote](https://github.com/skyhancloud/dsh-client-ui-quote) — 在网页聊天输入框上方为选中的 AI 回复内容添加可移除的引用横幅，随下一条消息一并发送。
 - [SmailPang/dsh-effort-slider](https://github.com/SmailPang/dsh-effort-slider) — 在原位置将 DSH 原生推理等级选项替换为可拖动的 Off、Low、High、Max 滑块，并保留官方模型选择流程。
@@ -1052,6 +1053,7 @@ dsh plugin --profile web add dshmarket
 - [ShawnKung/dsh-balance-monitor](https://github.com/ShawnKung/dsh-balance-monitor) — 在 DSH Web 侧边栏展示可选的 DeepSeek、Kimi、智谱 GLM 和 TeamoRouter 余额，并提供渠道详情、用量数据与刷新控制。
 - [Shiye-10Pages/dsh-whale-meter](https://github.com/Shiye-10Pages/dsh-whale-meter) — 用量段位与战绩卡片：按本月 token 消耗评 🐟→🐳 五档段位，分位本地估算（零上报）；6 家厂商 46 个模型精准计价，支持国内厂商按输入长度分档；自动回填安装前的历史会话；8·17 调价前后同一份用量的新旧价对比。数据全在本机，无遥测。
 - [Six6stRINgs/dsh-thinking-token-stat](https://github.com/Six6stRINgs/dsh-thinking-token-stat) — 在底部 Dock 添加模型思考 token 统计信息的轻量化插件。
+- [sixzjd/dsh-usage-dashboard](https://github.com/sixzjd/dsh-usage-dashboard) — DSH 用量看板：在 Web UI 展示按模型/会话/日期的 token 用量与成本统计、缓存命中率与余额组件；npm 包为 @sixzjd/dsh-usage-dashboard。
 - [skyzhao1223/dsh-agent-token-stats](https://github.com/skyzhao1223/dsh-agent-token-stats) — 跨 Agent 的 token 用量看板:聚合 Claude Code、OpenCode、Cursor、DSH、OpenClaw、CodeWhale、Hermes 等本地对话日志,台账持久化(删除聊天记录后历史仍留存),提供缓存命中率、成本估算、环比对比与当日下钻分析的侧边栏面板。
 - [SoDaZilla-zzz/dsh-liquid-glass-balance-card](https://github.com/SoDaZilla-zzz/dsh-liquid-glass-balance-card) — DSH 网页右上角可拖动 3D 液态玻璃余额卡片：显示 DeepSeek API 余额、累计消费与 Token 统计（今天/昨天/近7天/近30天/全部），玻璃参数/3D 厚度/颜色均可调，内置官方充值入口。
 - [Starlight-bananice/dsh-status-bar](https://github.com/Starlight-bananice/dsh-status-bar) — 输入栏下可配置的 17 段会话状态栏，提供实时 TPS、按模型分别计价的费用估算，以及用量与费用弹窗。
@@ -1434,6 +1436,8 @@ dsh plugin --profile web add dshmarket
 - [shenkonghui/dsh-llm-acp](https://github.com/shenkonghui/dsh-llm-acp) — 通过 ACP（Agent Client Protocol）将任意外部 agent 作为 LLM 提供方接入——支持 Claude Code、Codex、Gemini CLI、Devin 等，内置注册表浏览与服务管理界面，支持惰性认证、模型动态发现与热切换。
 - [shuind/dsh-codex-harness](https://github.com/shuind/dsh-codex-harness) — 在 DSH 中提供精简的 Codex 编码模式：使用精简的 codex 提示词与原生 Codex 风格工具，并用少量提示词约束抑制 GPT 的过度解释；提示词可自行编辑调整。
 - [SISCHOI/daruma#dsh-daruma](https://github.com/SISCHOI/daruma/tree/main/packages/dsh-daruma) — 渠道开始失败时不让长任务中断：内置重试放弃后 daruma 接管，对连续 429/5xx 或终止性错误跳闸自愈断路器，把下一个请求切到链上的其他渠道。输入框旁的面板可手动挑选备用渠道，切换会在会话里显示为提示行，每次决策都落盘成可审计的 JSONL 日志。
+- [sixzjd/dsh-opencode-connect](https://github.com/sixzjd/dsh-opencode-connect) — 把 OpenCode Zen 模型（含限时免费模型池）接入 DSH：进程内 loopback shim 加自动模型 fallback，无需外部进程、无需改配置文件；npm 包为 @sixzjd/dsh-opencode-connect。
+- [sixzjd/dsh-workbuddy-connect](https://github.com/sixzjd/dsh-workbuddy-connect) — 把 WorkBuddy（国内版）订阅模型接入 DSH：进程内 loopback shim，配套账号管理设置卡片与实时模型目录；npm 包为 @sixzjd/dsh-workbuddy-connect。
 - [SnowAmberX/dsh-role-router](https://github.com/SnowAmberX/dsh-role-router) — 按 default、planner 和 subagent 角色将代理请求路由到可配置模型，在计划模式下自动使用 planner，并提供逐角色推理强度与 Web UI 配置。
 - [songoao25/dsh-chatgpt-subscription](https://github.com/songoao25/dsh-chatgpt-subscription) — 通过官方 OAuth 绑定你的 ChatGPT 账号，在 DSH 内直接使用 ChatGPT 模型对话，消耗 Plus/Pro 订阅额度。
 - [SpookySandwich/dsh-plugin-rollout-scout](https://github.com/SpookySandwich/dsh-plugin-rollout-scout) — 检测账号当前被分配到哪个对话模型：并发发起一次性探测会话，按段落开头的写法为流式思维链打分，读起来像旧模型的在数秒内中止。附带离线自检，用同一分类器回放 13 条人工标注的思维链。
